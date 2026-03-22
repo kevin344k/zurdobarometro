@@ -1,29 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Impuestos({ data }) {
-  console.log("impuestos", data);
+  const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="lg:grid lg:grid-cols-2">
-      {data.map((impuesto, index) => (
-        <div
-          key={index}
-          className="bg-white w-full text-black px-4 py-2 mb-2 rounded-lg shadow-lg border-l-5 border-yellow-logo-600"
-        >
-          <p className="font-bold text-md">{impuesto.nombre}</p>
-          <p className="hidden md:flex lg:flex truncate text-sm">
-            {impuesto.descripcion}
-          </p>
-          <a
-            href={impuesto.fuente}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex gap-2 text-shadow-yellow-logo-950 bg-yellow-logo-300 text-sm w-fit p-2 mt-3 rounded-md"
+    <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {data.slice(0, expanded ? data.length : 3).map((impuesto, index) => (
+          <div
+            key={index}
+            className="bg-white text-black px-5 py-4 rounded-lg shadow-lg border-l-4 border-yellow-logo-600 hover:shadow-xl hover:scale-105 transition-all"
           >
-            Leer más 
-          </a>
-        </div>
-      ))}
+            <p className="font-bold text-base md:text-lg">{impuesto.nombre}</p>
+            <p className="text-sm md:text-base text-gray-700 mt-2 line-clamp-3">
+              {impuesto.descripcion}
+            </p>
+            <a
+              href={impuesto.fuente}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-yellow-logo-950 bg-yellow-logo-300 text-sm font-medium w-fit px-3 py-2 mt-4 rounded-md hover:bg-yellow-logo-500 transition-colors"
+            >
+              Leer más →
+            </a>
+          </div>
+        ))}
+      </div>
+
+      {/* Botón Ver Más */}
+      {data.length > 3 && (
+        <button
+          onClick={() => setExpanded(!expanded)}
+          className="mt-6 w-full bg-yellow-logo-600 hover:bg-yellow-logo-700 text-white font-bold py-2 px-4 rounded-lg transition-colors"
+        >
+          {expanded ? "Ver menos ▲" : "Ver más ▼"}
+        </button>
+      )}
     </div>
   );
 }

@@ -1,6 +1,6 @@
-# Zurdobarómetro
+# PolicyTracker Ecuador
 
-Este es un sitio que mide cuan empobrecedor es un gobierno.  
+Herramienta de análisis transparente de políticas fiscales, deudas y programas de transferencia en Ecuador.  
 
 Currently, two official plugins are available:
 

@@ -1,5 +1,24 @@
 const data = {
   impuestos_noboa: [
+
+  {
+      nombre: "Impuesto a influencers",
+      descripcion:
+        "Retención del 10% a influencers y creadores de contenido en Ecuador",
+      fuente:
+        "https://www.lahora.com.ec/economia/sri-fija-retencion-del-10-a-influencers-y-creadores-de-contenido-en-ecuador-20260309-0038.html",
+    },
+    
+
+  {
+      nombre: " Impuesto a la Renta cuando un cliente abra pólizas en bancos y cooperativas",
+      descripcion:
+        "Sube del 2% al 3% la retención del Impuesto a la Renta cuando un cliente abra pólizas en bancos y cooperativas",
+      fuente:
+        "https://www.primicias.ec/economia/sri-retencion-impuesto-renta-inversiones-polizas-bancos-cooperativas-117479/",
+    },
+    
+    
     {
       nombre: "Incremento del IVA",
       descripcion:
@@ -61,27 +80,36 @@ const data = {
   deudas_noboa: [
     {
       entidad: "Fondo Monetario Internacional (FMI)",
-      antidad: "4000000000",
-      Descripción:
+      cantidad: "4000000000",
+      descripcion:
         "Crédito principal aprobado en 2024 para enfrentar el déficit fiscal. Se suma un crédito puente adicional de 9 meses solicitado para evitar problemas de liquidez en 2026–2027.",
-      Fuente:
+      fuente:
         "https://www.bloomberglinea.com/2024/05/31/ecuador-pide-prestamo-puente-al-fmi-para-evitar-problemas-de-liquidez/",
     },
     {
       entidad: "Créditos Externos Totales (varias entidades multilaterales)",
-      antidad: "4383000000",
-      Descripción:
+      cantidad: "4383000000",
+      descripcion:
         "Créditos recibidos entre enero y noviembre de 2024. El 90% se usó para amortización de deuda previa, y el 10% para cubrir déficit fiscal.",
-      Fuente:
+      fuente:
         "https://www.primicias.ec/noticias/economia/ecuador-deuda-externa-gasto-amortizacion/",
     },
     {
-      entidad: "Bancos chinos (en evaluación)",
-      antidad: "No especificado",
-      Descripción:
-        "Se están negociando nuevos préstamos con bancos chinos para inversión e infraestructura. No se han confirmado montos ni fechas de desembolso.",
-      Fuente:
-        "https://www.bloomberglinea.com/2024/05/21/ecuador-busca-financiamiento-en-china-ante-falta-de-liquidez/",
+      entidad: "Eximbank y CDB ",
+      cantidad: "764000000",
+      descripcion:
+        "Ecuador volverá a pedir créditos a China, Gobierno espera USD 764 millones de los bancos Eximbank y CDB en 2026",
+
+      fuente:
+        "https://www.primicias.ec/economia/deuda-creditos-china-daniel-noboa-bancos-eximbank-cdb-108935/",
+    },
+    {
+      entidad: "Emisión de Bonos en el Mercado Internacional",
+      cantidad: "4000000000",
+      descripcion:
+        "El gobierno de Daniel Noboa ha retornado al mercado de bonos internacionales para financiar el déficit fiscal. Esta emisión genera deuda que recae en la población ecuatoriana, comprometiendo recursos futuros para servicio de deuda.",
+      fuente:
+        "https://www.primicias.ec/economia/ecuador-bonos-regreso-mercado-emision-deuda-noboa-114685/",
     },
   ],
 
