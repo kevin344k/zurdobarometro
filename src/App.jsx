@@ -82,7 +82,7 @@ function App() {
     <>
       <NavBar />
 
-      <main className="relative w-full grid lg:grid-cols-2  p-4 md:p-6 lg:p-8 pt-25 md:pt-20 md:grid-cols-1 gap-4 lg:pt-16 z-20  mx-auto">
+      <main className=" w-full grid lg:grid-cols-2 p-2 md:p-6 lg:p-8 pt-25 md:pt-20 md:grid-cols-1 gap-4 lg:pt-16 z-20  mx-auto">
         {/* SECCIÓN 1: ANÁLISIS IDEOLÓGICO */}
         <section className="flex items-center justify-center">
           <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-black p-6 md:p-10 lg:p-5 rounded-2xl border border-gray-700 shadow-2xl hover:shadow-3xl transition-shadow duration-300 lg:w-[700px]">
