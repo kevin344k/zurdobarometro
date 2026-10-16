@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import angry from "/angry.png"
 const emojiNivel = (nivel) => {
   if (nivel <= 10) return "🧠";
